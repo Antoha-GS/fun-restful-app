@@ -44,13 +44,7 @@ class Post
         $metadata->addPropertyConstraint('image', new Assert\NotBlank());
         $metadata->addPropertyConstraint('image', new Assert\Image([
             'maxSize' => '2M',
-            'mimeTypes' => [
-                'image/gif',
-                'image/jpeg',
-                'image/pjpeg',
-                'image/png',
-                'image/x-png',
-            ],
+            'mimeTypes' => ['image/gif', 'image/jpeg', 'image/pjpeg', 'image/png', 'image/x-png'],
         ]));
     }
 

@@ -1,2 +1,3 @@
-# fun-restful-app
-RESTful API of some service for fun
+# Fun RESTful APP
+
+RESTful API of some entertainment service.

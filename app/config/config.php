@@ -3,7 +3,7 @@
  * @var \Silex\Application $app
  */
 
-$app['app.name'] = 'reast_api_fun';
+$app['app.name'] = 'fun_restful_app';
 
 $app['api.endpoint'] = '/api';
 $app['api.version'] = 'v1';

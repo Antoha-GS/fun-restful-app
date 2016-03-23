@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class PostControllerTest extends PHPUnit_Framework_TestCase
 {
-    const TMP_DIR = '/tmp/rest_api_fun/tests';
+    const TMP_DIR = '/tmp/fun_restful_app/tests';
 
     private static $embeddedFileName = 'test.jpg';
     private static $embeddedFileDir = ROOT_PATH . '/tests/Components/_data';
@@ -77,7 +77,7 @@ class PostControllerTest extends PHPUnit_Framework_TestCase
         static::assertEquals(201, $response->getStatusCode());
         static::assertEquals([
             'id' => 'new_id',
-            'image' => '/tmp/rest_api_fun/tests/file_uploader_dst/author_new/test.jpg',
+            'image' => '/tmp/fun_restful_app/tests/file_uploader_dst/author_new/test.jpg',
             'author' => 'Author New',
             'tags' => ['tag1', 'tag2', 'tag3'],
             'likes' => 0,
@@ -97,7 +97,7 @@ class PostControllerTest extends PHPUnit_Framework_TestCase
         static::assertEquals(200, $response->getStatusCode());
         static::assertEquals([
             'id' => 'existing_id_1',
-            'image' => '/tmp/rest_api_fun/tests/file_uploader_dst/author__1/image_1.jpg',
+            'image' => '/tmp/fun_restful_app/tests/file_uploader_dst/author__1/image_1.jpg',
             'author' => 'Author #1',
             'tags' => ['yet', 'another', 'post'],
             'likes' => 0,
@@ -115,7 +115,7 @@ class PostControllerTest extends PHPUnit_Framework_TestCase
         static::assertEquals(200, $response->getStatusCode());
         static::assertEquals([
             'id' => 'existing_id_1',
-            'image' => '/tmp/rest_api_fun/tests/file_uploader_dst/author__1/image_1.jpg',
+            'image' => '/tmp/fun_restful_app/tests/file_uploader_dst/author__1/image_1.jpg',
             'author' => 'Author #1',
             'tags' => ['yet', 'another', 'post'],
             'likes' => 1,
@@ -146,7 +146,7 @@ class PostControllerTest extends PHPUnit_Framework_TestCase
         static::assertEquals([
             [
                 'id' => 'existing_id_3',
-                'image' => '/tmp/rest_api_fun/tests/file_uploader_dst/author__3/image_3.jpg',
+                'image' => '/tmp/fun_restful_app/tests/file_uploader_dst/author__3/image_3.jpg',
                 'author' => 'Author #3',
                 'tags' => ['yet', 'another', 'post'],
                 'likes' => 0,
@@ -154,7 +154,7 @@ class PostControllerTest extends PHPUnit_Framework_TestCase
             ],
             [
                 'id' => 'existing_id_2',
-                'image' => '/tmp/rest_api_fun/tests/file_uploader_dst/author__2/image_2.jpg',
+                'image' => '/tmp/fun_restful_app/tests/file_uploader_dst/author__2/image_2.jpg',
                 'author' => 'Author #2',
                 'tags' => ['yet', 'another', 'post'],
                 'likes' => 0,
@@ -162,7 +162,7 @@ class PostControllerTest extends PHPUnit_Framework_TestCase
             ],
             [
                 'id' => 'existing_id_1',
-                'image' => '/tmp/rest_api_fun/tests/file_uploader_dst/author__1/image_1.jpg',
+                'image' => '/tmp/fun_restful_app/tests/file_uploader_dst/author__1/image_1.jpg',
                 'author' => 'Author #1',
                 'tags' => ['yet', 'another', 'post'],
                 'likes' => 0,
