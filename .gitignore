@@ -1,0 +1,27 @@
+# IntllijIdea setting file
+/.idea
+
+# Generated files (cache, logs, etc.).
+/var/*
+!/var/cache
+/var/cache/*
+!/var/cache/DoctrineMongodbHydrators
+!/var/cache/DoctrineMongodbProxies
+/var/cache/DoctrineMongodbHydrators/*
+/var/cache/DoctrineMongodbProxies/*
+!/var/cache/DoctrineMongodbHydrators/.gitkeep
+!/var/cache/DoctrineMongodbProxies/.gitkeep
+!/var/logs
+/var/logs/*
+!var/logs/.gitkeep
+
+# Environments config files
+/app/config/*
+!/app/config/config.php
+
+# Uploads
+/web/uploads/*
+!/web/uploads/.gitkeep
+
+# The third-party dependencies.
+/vendor

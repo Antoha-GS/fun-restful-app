@@ -1,0 +1,29 @@
+{
+    "name": "Antoha-GS/fun-restful-app",
+    "description": "RESTful API of some service for fun",
+    "authors": [
+        {
+            "name": "Anton Vasetskiy",
+            "email": "antoha.gws@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "~1.3",
+        "neutron/mongo-odm-silex-provider": "*",
+        "monolog/monolog": "^1.18",
+        "symfony/form": "^3.0",
+        "symfony/security-csrf": "^3.0",
+        "symfony/validator": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src"
+        },
+        "files": [
+            "app/constants.php"
+        ]
+    }
+}
