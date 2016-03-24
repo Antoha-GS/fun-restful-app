@@ -68,8 +68,8 @@ $app->register(new ValidatorServiceProvider());
 
 $app['services.file_uploader_factory'] = $app->protect(function (array $config) {
     return new FileUploader(
-        rtrim($config['root_path'], '/'),
-        trim($config['path'], '/'),
+        $config['root_path'],
+        $config['path'],
         isset($config['file_name_generator']) ? $config['file_name_generator'] : null
     );
 });

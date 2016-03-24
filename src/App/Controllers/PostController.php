@@ -179,6 +179,7 @@ class PostController
         try {
             $post = $this->resolvePostById($id);
             $this->app['doctrine.odm.mongodb.dm']->remove($post);
+            $this->app['doctrine.odm.mongodb.dm']->flush($post);
         } catch (NotFoundHttpException $e) {
             $this->app['logger']->debug('Trying to remove post that not found.');
         }

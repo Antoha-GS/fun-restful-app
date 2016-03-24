@@ -28,8 +28,8 @@ class FileUploader
      */
     public function __construct($uploadRootDir, $uploadDir, FileNameGeneratorInterface $fileNameGenerator = null)
     {
-        $this->uploadRootDir = $uploadRootDir;
-        $this->uploadDir = $uploadDir;
+        $this->uploadRootDir = rtrim($uploadRootDir, '/');
+        $this->uploadDir = '/' . trim($uploadDir, '/');
         $this->fileNameGenerator = $fileNameGenerator ?: new SameFileNameGenerator();
     }
 
